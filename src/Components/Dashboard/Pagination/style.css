@@ -1,0 +1,16 @@
+.pagination-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+p{
+    color: var(--black);
+}
+@media only screen and (max-width:450px){
+    .pagination-component{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}

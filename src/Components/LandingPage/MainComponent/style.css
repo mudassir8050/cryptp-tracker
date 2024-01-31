@@ -1,0 +1,128 @@
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .5rem 3rem;
+}
+.track-crypto-heading,.real-time-heading{
+    font-size: 6.5rem;
+    margin: 0;
+}
+.track-crypto-heading{
+    color: var(--black);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black);
+}
+.track-crypto-heading:hover{
+    color: var(--white);
+    transition: all 0.3s;
+
+}
+.real-time-heading{
+    color: var(--blue);
+}
+.info-text{
+    color: var(--grey);
+    font-size: 1rem;
+}
+.btn-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+.phone-container{
+    width: 46%;
+    position: relative;
+}
+.iphone{
+    position: absolute;
+    z-index: 100;
+    min-width: 300px;
+    width: 48%;
+    right: 0;
+}
+.gradient{
+    position: absolute;
+    min-width: 250px;
+    width: 40%;
+    top: 3.5rem;
+    right: 0;
+}
+
+@media only screen and (max-width:1180px){
+    .track-crypto-heading,.real-time-heading{
+        font-size: 4.5rem;
+    }
+}
+@media only screen and (max-width:950px){
+    .track-crypto-heading,.real-time-heading{
+        font-size: 3.8rem;
+    }
+}
+@media only screen and (max-width:800px){
+    .iphone{
+        min-width: 250px;
+        left: 15%;
+    }
+    .gradient{
+        min-width: 200px;
+        left: 25%;
+    }
+    .flex-info{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .phone-container{
+        margin: auto;
+        display: block;
+        margin-top: 3rem;
+    }
+    .real-time-heading,.track-crypto-heading{
+        text-align: center;
+    }
+    .left-component{
+        width: 100%;
+    }
+    .info-text{
+        text-align: center;
+    }
+    .btn-flex{
+        justify-content: center;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .track-crypto-heading,.real-time-heading{
+        font-size: 2.8rem;
+    }
+    .iphone{
+        min-width: 215px;
+        left: 0%;
+    }
+    .gradient{
+        min-width: 195px;
+        left: 5%;
+        top: 2.5rem;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .track-crypto-heading,.real-time-heading{
+        font-size: 2.5rem;
+    }
+    .phone-container{
+        justify-content: center;
+    }
+    .iphone{
+        min-width: 215px;
+        left: -20%;
+    }
+    .gradient{
+        min-width: 185px;
+        left: 5%;
+        top: 2.5rem;
+    }
+}
